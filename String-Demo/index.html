@@ -25,7 +25,13 @@ function verifyCard(){
     var txtCard=document.getElementById('txtCard').value;
     var firstChar=txtCard.CharAt(0);
 var cardLogo=document.getElementById('cardLogo');
-
+if(firstChar=='4'){
+    cardLogo.src='images/visa.jpg'
+}else if(firstChar=='5'){
+    cardLogo.src='images/master.png'
+}else{
+    cardLogo.src='images/invalid.png'
+}
 }
 
 </script>
