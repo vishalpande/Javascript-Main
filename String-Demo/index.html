@@ -15,11 +15,18 @@ function verifyName(){
 var txtName=document.getElementById('txtName').value;
 var msg=document.getElementById('msg');
 var firstCharCode=txtName.charCodeAt(0);
-
-
+if (firstCharCode>=65 && firstCharCode<=90){
+    msg.innerHTML="";
+}else{
+    msg.innerHTML="name must start with uppercase letter";
+}
+}
+function verifyCard(){
+    var txtCard=document.getElementById('txtCard').value;
+    var firstChar=txtCard.CharAt(0);
+var cardLogo=document.getElementById('cardLogo');
 
 }
-
 
 </script>
 </head>
