@@ -10,8 +10,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>String Demo</title>
     <link rel="stylesheet" href="...node_modules/bootstrap/dist/css/bootstrap.css">
-<script>
-function verifyName(){
+<script type="text/javascript" >
+function VerifyName(){
 var txtName=document.getElementById('txtName').value;
 var msg=document.getElementById('msg');
 var firstCharCode=txtName.charCodeAt(0);
@@ -21,7 +21,7 @@ if (firstCharCode>=65 && firstCharCode<=90){
     msg.innerHTML="name must start with uppercase letter";
 }
 }
-function verifyCard(){
+function VerifyCard(){
     var txtCard=document.getElementById('txtCard').value;
     var firstChar=txtCard.CharAt(0);
 var cardLogo=document.getElementById('cardLogo');
@@ -41,14 +41,14 @@ if(firstChar=='4'){
 
         <label>User Name</label>
         <div>
-            <input onblur="verifyName()" class="form-control" placeholder="Name must start  with Uppercase letter" type="text" id="txtName">
+            <input onblur="VerifyName()" class="form-control" placeholder="Name must start  with Uppercase letter" type="text" id="txtName">
             <div id="msg" class="text-danger"></div>
             </div>
     </div>
     <div class="form-group">
 <label>Card Number</label>
 <div class="input-group">
-<input onkeyup="'VerifyCard()" type="txt" id="txtCard" class="form-control">
+<input onkeyup="VerifyCard()" type="txt" id="txtCard" class="form-control">
 <div class="input-group-append">
     <span class="input-group-text">
 <img id="cardLogo" width="50" height="20">
