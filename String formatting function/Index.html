@@ -24,12 +24,14 @@ if(txtPwd.match(regExp)){
 lblMsg.innerHTML="strong password".fontcolor('green').bold();
 GradeDisplay(1,100,100);
 
-
-
-
-
-
-
+}else{
+    if(txtPwd.length<4){
+        lblMsg.innerHTML="poor password".fontcolor('red').italics();
+        gradeDisplay(1,100,20);
+    }else{
+        lblMsg.innerHTML="weak password".fontcolor('yellow').bold().italics();
+        gradeDisplay(1,100,60);
+    }
 }
 
             }
