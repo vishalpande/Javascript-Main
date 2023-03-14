@@ -8,10 +8,32 @@ progress{
     height:50px;
     width:100px;
 }
+           </style>
+           <script>
+            function VerifyPassword() {
+var regExp=document.getElementById('txtPwd').value;
+var lblMsg=document.getElementById('lblMsg');
+var grade=document.getElementById('grade');
+grade.style.display='inline';
+
+function GradeDisplay(min,max,value) {
+    grade.min=min;grade.max=max;grade.value=value;
+
+}
+if(txtPwd.match(regExp)){
+lblMsg.innerHTML="strong password".fontcolor('green').bold();
+GradeDisplay(1,100,100);
 
 
 
-            </style>
+
+
+
+
+}
+
+            }
+           </script>
         </head>
         <body class="container-fluid">
             <h2>Regular expression</h2>
