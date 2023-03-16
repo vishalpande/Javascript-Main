@@ -1,0 +1,44 @@
+<!doctype html>
+    <html >
+        <head> 
+            <title>login page</title>
+<link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+
+<script>
+
+function login(){
+    const username=document.getElementById('user').value
+    const password=document.getElementById('psW').value
+if(username=='' && password==''){
+    alert('enter the usernmae and password')
+}else{
+    alert('you have succefull')
+}
+
+}
+
+
+
+</script>
+
+        </head>
+        <body class="container-fluid">
+            <div class="form-group">
+                <label >Uername</label>
+                <div>
+                    <input type="text" id="user">
+                </div>
+<label >password</label>
+<div class="form-group">
+<input type="password" placeholder="enter your password" id="psW">
+<div <i class="fas fa-users-class    "></i>
+<button class="form-floating" onclick='login()'> Login </button>
+
+
+            </div>
+
+
+            <script  src="../node_modules/jquery/dist/jquery.js"></script>
+            <script src="../node_modules/bootstrap/js/bootstrap.bundle.js"></script>
+        </body>
+    </html>
